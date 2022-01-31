@@ -1,14 +1,12 @@
 package com.test.springdata.model;
 
 import lombok.Data;
-import org.springframework.data.annotation.Id;
 
 import java.math.BigDecimal;
 
 @Data
-public class Account {
-    @Id
-    private long id;
-    private String name;
+public class TransferRequest {
+    private long senderAccountId;
+    private long receiverAccountId;
     private BigDecimal amount;
 }
